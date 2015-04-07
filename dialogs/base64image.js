@@ -171,7 +171,6 @@ CKEDITOR.dialog.add("base64imageDialog", function(editor){
 		
 		/* Dialog with file and url image source */
 		var sourceElements = [
-			/* jberg
 			{
 				type: "hbox",
 				widths: ["70px"],
@@ -179,17 +178,18 @@ CKEDITOR.dialog.add("base64imageDialog", function(editor){
 					{
 						type: "checkbox",
 						id: "urlcheckbox",
-						style: "margin-top:5px",
+						style: "margin-top:5px;display:none;", // jberg
 						label: editor.lang.common.url+":"
 					},
 					{
 						type: "text",
 						id: "url",
 						label: "",
+						style: "display:none;", // jberg
 						onChange: function(){ imagePreview("url"); }
 					}
 				]
-			},*/
+			},
 			{
 				type: "hbox",
 				widths: ["70px"],
